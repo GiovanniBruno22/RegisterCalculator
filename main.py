@@ -49,7 +49,6 @@ class Register(QtWidgets.QMainWindow):
             if item:
                 price = [i.strip("$") for i in item.split(" ") if "$" in i]
                 total += float(price[0])
-                print(price)
         self.totallabel.setText(str(total)+"0")
 
 
